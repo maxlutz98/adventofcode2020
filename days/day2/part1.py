@@ -31,7 +31,7 @@ def validate_passwords(data):
 
 
 def main():
-    puzzle = read_input("input_day2.txt")
+    puzzle = read_input("days/day2/input_day2.txt")
     data = process_input(puzzle)
     number = validate_passwords(data)
     print(number)
