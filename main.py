@@ -1,7 +1,7 @@
 # This is a sample Python script.
 import re
 
-from days.day4 import part2
+from days.day6 import part2
 
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
