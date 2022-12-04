@@ -8,7 +8,7 @@ def read_input(filename):
     return data
 
 
-def part1(puzzle: List[str]) -> None:
+def part1(puzzle: List[str]) -> int:
     result = 0
     for line in puzzle:
         first_start, first_end = map(int, line.split(",")[0].split("-"))
@@ -20,10 +20,10 @@ def part1(puzzle: List[str]) -> None:
             and second_end <= first_end
         ):
             result += 1
-    print(result)
+    return result
 
 
-def part2(puzzle: List[str]) -> None:
+def part2(puzzle: List[str]) -> int:
     result = 0
     for line in puzzle:
         first_start, first_end = map(int, line.split(",")[0].split("-"))
@@ -35,13 +35,13 @@ def part2(puzzle: List[str]) -> None:
             or first_end >= second_end >= first_start
         ):
             result += 1
-    print(result)
+    return result
 
 
 def main():
     puzzle = read_input("input.txt")
-    part1(puzzle)
-    part2(puzzle)
+    print(part1(puzzle))
+    print(part2(puzzle))
 
 
 if __name__ == "__main__":
